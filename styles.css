@@ -1,0 +1,276 @@
+body {
+  background-color: rgb(8, 0, 40);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 20%;
+  background-color: rgb(0, 0, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  z-index: 999;
+  text-indent: 30px;
+}
+
+.navbar h2 {
+  transition: color 0.3s ease;
+}
+
+.navbar h2:hover {
+  color: #ff9800;
+  cursor: pointer;
+}
+
+.container1 {
+  background-color: rgb(0, 0, 72);
+  border-radius: 20px;
+  margin: 150px auto;
+  max-width: 90%;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.name {
+  color: white;
+  margin-left: 250px; 
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 90px;
+}
+
+.name2 {
+  color: rgb(255, 255, 255);
+  margin-left: 250px; 
+  margin-top: -120px;
+  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.jobtext {
+  color: #0800aa;
+  font-style: italic;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 250px;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.contents {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 250px;
+  padding-bottom: 120px;
+  font-size: 15px;
+}
+
+.vertical-line {
+  position: absolute;
+  margin-left: 675px;
+  margin-top: 50px;
+  display: flex;
+  width: 2px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+}
+
+.pp {
+  position: absolute;
+  margin-left: 820px;
+  margin-top: -440px;
+  border-radius: 20px;
+}
+
+.education {
+  text-align: center;
+  font-size: 25px;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.event {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.event-content {
+  padding: 20px;
+  background-color: rgb(0, 0, 72);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  flex: 1;
+}
+
+.event-content h3 {
+  margin-top: 0;
+}
+
+.event-content p {
+  margin: 10px 0;
+}
+
+.event-text {
+  position: relative;
+  text-align: right;
+}
+
+.text-bahasaprogram {
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  font-size: 25px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.bahasaprogram {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bahasa {
+  width: calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  scale: 60%;
+}
+
+.portfolio-textatas {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 100px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+}
+
+.portfolio-image {
+  width: 500px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.portfolio-content {
+  flex: 1;
+}
+
+.portfolio-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio-description {
+  font-size: 16px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(0, 0, 72);
+  border-radius: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards, slideIn 1s ease forwards;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info div {
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+.whatsapp {
+  color: #ffffff;
+}
+
+.email {
+  color: #ffffff;
+}
+
+.linkedin {
+  color: #ffffff;
+}
